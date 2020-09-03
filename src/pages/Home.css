@@ -16,7 +16,7 @@
   font-size: 15px;
 }
 .home__header a:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 .header__headerRight {
   display: flex;
@@ -24,8 +24,18 @@
   min-width: 13vw;
   justify-content: space-between;
 }
+.header_iconApp {
+  border: none;
+}
+.header_iconApp:focus {
+  outline: navajowhite;
+}
+
 .header__headerRight > .MuiSvgIcon-root {
   margin-right: 20px;
+}
+.header_headerRightAllApp > .MuiSvgIcon-root:hover {
+  cursor: pointer;
 }
 .home__body {
   float: 1;
@@ -36,4 +46,82 @@
 .home__body > img {
   object-fit: contain;
   height: 100px;
+}
+
+.header_headerRightAllApp {
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.allApp {
+  height: 800;
+  width: 250px;
+  right: 0;
+  margin-right: 38px;
+  background-color: #f8f8f8;
+  position: absolute;
+  margin-top: 40px;
+  right: 0;
+  border-radius: 8px;
+  overflow-y: hidden;
+  box-shadow: -2px 2px #f5f5f5;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+  border-top: 1px solid #eae5e5;
+  background-color: #f8f8f8;
+}
+
+.allApp {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 8px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.service_icons > img {
+  height: 50px;
+  object-fit: cover;
+  padding: 15px;
+}
+.service_icons > p {
+  font-size: 12px;
+  text-align: center;
+}
+
+/* footer */
+.footer_block {
+  margin-top: 290px;
+}
+.home_footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+}
+.home_footer a {
+  margin-right: 20px;
+  text-decoration: inherit;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+}
+.home_footer a:hover {
+  text-decoration: underline;
+}
+.home_footerRight {
+  display: flex;
+  align-items: center;
+  min-width: 13vw;
+  justify-content: space-between;
+}
+
+.footer_footerContry {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+  align-items: center;
 }

@@ -45,3 +45,15 @@
 .search_buttonsHidden {
   display: none !important;
 }
+.search__language {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  color: #222;
+  font-size: small;
+  line-height: 28px;
+}
+.language__section > a {
+  text-decoration: none;
+  padding: 0 5px;
+}

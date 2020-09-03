@@ -1,9 +1,11 @@
 export const initialState = {
   term: null,
+  isBoxVisible: false,
 };
 
 export const actionTypes = {
   SET_SEARCH_TERM: "SET_SEARCH_TERM",
+  TOGGLE_BoxVisible: "TOGGLE_BoxVisible",
 };
 
 const reducer = (state, action) => {
@@ -14,7 +16,11 @@ const reducer = (state, action) => {
         ...state,
         term: action.term,
       };
-
+    case actionTypes.TOGGLE_BoxVisible:
+      return {
+        ...state,
+        isBoxVisible: action.isBoxVisible,
+      };
     default:
       return state;
   }

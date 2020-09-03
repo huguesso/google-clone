@@ -15,8 +15,8 @@ import DescriptionIcon from "@material-ui/icons/Description";
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
   // LIVE API CALL
-  // const { data } = useGoogleSearch(term);
-  const data = Response;
+  const { data } = useGoogleSearch(term);
+  // const data = Response;
   console.log(data);
   // https://developers.google.com/custom-search/v1/using_rest
 
@@ -36,7 +36,7 @@ function SearchPage() {
 
           <div className="searchPage__options">
             <div className="searchPage__optionsLeft">
-              <div className="searchPage__option">
+              <div className="searchPage__option active">
                 <SearchIcon />
                 <Link to="/all">All </Link>
               </div>
@@ -82,7 +82,7 @@ function SearchPage() {
 
           {data?.items.map((item) => (
             <div className="searchPage_result">
-              <a href={item.link}>{item.displayLink}</a>
+              <a href={item.link} className="displaylink">{item.displayLink}</a>
               <a cl className="searchPage_resultLink" href={item.link}>
                 {item.pagemap?.cse_image?.length > 0 && (
                   <img
